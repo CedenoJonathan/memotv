@@ -1,0 +1,106 @@
+body {
+    /* background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(106,69,234,1) 42%, rgba(104,40,213,1) 72%, rgba(138,50,221,1) 92%, rgba(144,46,218,1) 100%); */
+    /* background-image: url(https://www.todofondos.net/wp-content/uploads/71-fondos-de-pantalla-de-color-hd.-fondo-para-computadora-hd-1080p-de-colores.jpg); */
+    background-image: url(https://images5.alphacoders.com/120/1205663.jpg);
+    background-repeat: no-repeat;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
+
+svg{
+  width: 300px;
+  height: 200px;
+  display: block;
+  position: relative;
+  overflow: hidden; 
+  margin: 0 auto;
+  /* background: rgba(4, 126, 95, 0.418); */
+}
+
+/* mis estilos */
+.nombre{
+    text-align: center;
+    color: aqua;
+}
+
+img{
+    border-radius: 30% 30%;
+    width: 50px;
+    height: 50px;
+    box-shadow : 8px  4px  28px  0px  #923C3C ;
+    cursor: pointer;
+}
+
+.contenedor__canales{
+    /* border: 10px solid #000; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    justify-items: center;
+}
+
+
+/* footer */
+footer{
+    background: #41414185;
+    padding: 10px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+.contenedor__footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+.content__foo{
+    text-align: center;
+}
+.content__foo h4{
+    color: #fff;
+    border-bottom: 3px solid #af20d3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.content__foo p{
+    color: #ccc;
+}
+.telefonos{
+    font-size: 19px;
+    margin: 20px 0 0;
+    color: #ccc;
+    text-decoration: none;
+}
+.titulo__final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+/* contenedor footer */
+@media screen and (max-width: 540px),(max-heiht: 300px){
+    .contenedor__footer{
+        flex-direction: column;
+        border: none;
+    }
+    .content__foo{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .content__foo h4{
+        border: none;
+    }
+    .content__foo p{
+        color: #ccc;
+        border-bottom: 1px solid #f2f2f2f2;
+        padding-bottom: 20px;
+    }
+    .titulo__final{
+        font-size: 20px;
+    }
+}
